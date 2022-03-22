@@ -1,0 +1,230 @@
+baseURL: https://barbu-it.github.io/website-public/
+languageCode: en-us
+title: Barbu IT
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+staticDir:
+  - static
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description: Barbu IT Services
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/fresh.svg
+    link: /
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: |
+      . Barbu IT .
+      Solutions informatiques Libres
+    # Hero subtitle (optional)
+    subtitle: >
+      Adaptées à vos besoins
+    # Button text
+    buttontext: En savoir plus
+    # Where the main hero button links to
+    buttonlink: "#"
+
+    # Hero image (from static/images/___)
+    #image: barbu/linux_badge.png
+    #image: barbu/dist_os.jpg
+    #image: barbu/linux_style2.png
+    image: barbu/linux_style.png
+    #image: illustrations/worker.svg
+    # Footer logos (from static/images/logos/clients/___.svg)
+    clientlogos:
+    - systek
+    - tribe
+    - kromo
+    - infinite
+    - gutwork
+
+
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Services
+    url: /
+  - title: Logiciel Libre
+    sublinks:
+    - title: Khéops
+      url: /
+    - title: Paasify
+      url: /
+    - title: Dropdown item
+      url: /
+  - title: Blog
+    url: /
+  - title: À propos
+    url: /
+  - title: Prendre contact
+    url: /
+    button: true
+
+
+  sidebar:
+    # Logo (from /images/logos/___.svg)
+    logo: fresh-square
+    sections:
+    - title: User
+      icon: user
+      links:
+      - text: Profile
+        url: /
+      - text: Account
+        url: /
+      - text: Settings
+        url: /
+    - title: Messages
+      icon: envelope
+      links:
+      - text: Inbox
+        url: /
+      - text: Compose
+        url: /
+    - title: Images
+      icon: image
+      links:
+      - text: Library
+        url: /
+      - text: Upload
+        url: /
+    - title: Settings
+      icon: cog
+      links:
+      - text: User settings
+        url: /
+      - text: App settings
+        url: /
+
+
+  section1:
+    title: Nos services
+    subtitle: Cliquez ici pour la liste complete
+    tiles:
+    - title: Formation
+      icon: mouse-globe
+      text: Élargir vos connaissances tout en répondant à vos besoins spécifiques
+      url: /
+      buttonText: Voir les formations
+
+    - title: Accompagnement
+      icon: laptop-cloud
+      text: Obtenez du service conseil au long de vos projets
+      url: /
+      buttonText: Voir les coachings
+
+    - title: Consultation horaire
+      icon: plug-cloud
+      text: Obtenez les services d'un expert pour vos projets
+      url: /
+      buttonText: Voir les candidats
+
+
+  section2:
+    title: You're here because you want the best
+    subtitle: And we know it
+    features:
+    - title: Powerful and unified interface
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: laptop-globe
+    - title: Cross-device synchronisation
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      icon: doc-sync
+    - title: Nomad system
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      icon: mobile-feed
+
+
+  section3: False
+  #section3:
+  #  title: One platform
+  #  subtitle: To rule them all
+  #  image: illustrations/mockups/app-mockup.png
+  #  buttonText: Get started
+  #  buttonLink: "#"
+
+
+  section4:
+    title: Quelques retours de nos clients!
+    subtitle: Les bons et les moins bons
+    clients:
+    - name: Irma Walters
+      quote: Ouep, c'etait un bon gars!
+      job: Technical Manager, Bell
+      img: 1
+    - name: John Bradley
+      quote: Il connait bien Linux
+      job: HR Partner, Klanik
+      img: 2
+    - name: Gary Blackman
+      quote: J'ai travaillé avec Rob et il est vraiment trop relou
+      job: Senior Devops, Ubisoft
+      img: 3
+
+
+  section5: true
+
+
+  footer:
+    # Logo (from /images/logos/___)
+    logo: fresh-white-alt.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+      # Icons are from Font Awesome
+    - link: https://github.com/barbu-it
+      icon: github
+    - link: https://www.linkedin.com/company/barbu-it/
+      icon: linkedin
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "Product"
+        links:
+        - text: Discover features
+          link: /
+        - text: Why choose our product?
+          link: /
+        - text: Compare features
+          link: /
+        - text: Our roadmap
+          link: /
+        - text: AGB
+          link: /agb
+      column2:
+        title: "Docs"
+        links:
+        - text: Get started
+          link: /
+        - text: User guides
+          link: /
+        - text: Admin guide
+          link: /
+        - text: Developers
+          link: /
+      column3:
+        title: "Blog"
+        links:
+        - text: Latest news
+          link: /blog/first
+        - text: Tech articles
+          link: /blog/second
+
+
