@@ -1,5 +1,5 @@
 baseURL: https://barbu-it.github.io/website-public/
-#baseURL: http://127.0.0.1/
+#baseURL: http://127.0.0.1:1313/website-public/
 languageCode: en-us
 title: Barbu IT
 theme: hugo-fresh
@@ -8,6 +8,7 @@ googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX
 disableKinds:
 - taxonomy
 - taxonomyTerm
+canonifyurls: true
 markup:
   goldmark:
     renderer:
@@ -116,19 +117,19 @@ params:
     - title: Formation
       icon: mouse-globe
       text: Élargir vos connaissances tout en répondant à vos besoins spécifiques
-      url: /
+      url: /services/formation
       buttonText: Voir les formations
 
     - title: Accompagnement
       icon: laptop-cloud
       text: Obtenez du service conseil au long de vos projets
-      url: /
+      url: /services/accompagnement
       buttonText: Voir les coachings
 
     - title: Consultation horaire
       icon: plug-cloud
       text: Obtenez les services d'un expert pour vos projets
-      url: /
+      url: /services/consultation
       buttonText: Voir les candidats
 
 
@@ -193,18 +194,12 @@ params:
     bulmalogo: true
     quicklinks:
       column1:
-        title: "Product"
+        title: "Products"
         links:
-        - text: Discover features
-          link: /
-        - text: Why choose our product?
-          link: /
-        - text: Compare features
-          link: /
-        - text: Our roadmap
-          link: /
-        - text: AGB
-          link: /agb
+        - text: Khéops
+          link: /foss/kheops
+        - text: Paasify
+          link: /foss/paasify
       column2:
         title: "Docs"
         links:
@@ -217,11 +212,11 @@ params:
         - text: Developers
           link: /
       column3:
-        title: "Blog"
+        title: "Informations"
         links:
-        - text: Latest news
+        - text: Technical Blog
           link: /blog/
-        - text: Tech articles
-          link: /blog/second
+        - text: À propos
+          url: page/about
 
 
