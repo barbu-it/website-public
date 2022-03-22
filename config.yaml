@@ -24,19 +24,24 @@ params:
   description: Barbu IT Services
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
+    #image: logos/fresh.svg
+    image: logos/barbu_it_site.svg
     link: /
   font:
     name: "Open Sans"
     sizes: [400,600]
+
+  listing:
+    mode: default
+
   hero:
     # Main hero title
     title: |
-      . Barbu IT .
-      Solutions informatiques Libres
+      Barbu IT
     # Hero subtitle (optional)
     subtitle: >
-      Adaptées à vos besoins
+      Service de consultation et solutions informatiques libres
+      adaptées à vos besoins
     # Button text
     buttontext: En savoir plus
     # Where the main hero button links to
@@ -50,11 +55,12 @@ params:
     #image: illustrations/worker.svg
     # Footer logos (from static/images/logos/clients/___.svg)
     clientlogos:
-    - systek
-    - tribe
-    - kromo
-    - infinite
-    - gutwork
+    - bell.svg
+    - klanik.jpg
+    - ubisoft.png
+    - sfl.png
+    - gee.png
+    - stm.svg
 
 
   # Customizable navbar. For a dropdown, add a "sublinks" list.
@@ -69,45 +75,45 @@ params:
     url: /blog/
   - title: À propos
     url: /page/about
-  - title: Prendre contact
+  - title: Contact
     url: /page/contact
     button: true
 
 
-  sidebar:
-    # Logo (from /images/logos/___.svg)
-    logo: fresh-square
-    sections:
-    - title: User
-      icon: user
-      links:
-      - text: Profile
-        url: /
-      - text: Account
-        url: /
-      - text: Settings
-        url: /
-    - title: Messages
-      icon: envelope
-      links:
-      - text: Inbox
-        url: /
-      - text: Compose
-        url: /
-    - title: Images
-      icon: image
-      links:
-      - text: Library
-        url: /
-      - text: Upload
-        url: /
-    - title: Settings
-      icon: cog
-      links:
-      - text: User settings
-        url: /
-      - text: App settings
-        url: /
+#  sidebar:
+#    # Logo (from /images/logos/___.svg)
+#    logo: fresh-square
+#    sections:
+#    - title: User
+#      icon: user
+#      links:
+#      - text: Profile
+#        url: /
+#      - text: Account
+#        url: /
+#      - text: Settings
+#        url: /
+#    - title: Messages
+#      icon: envelope
+#      links:
+#      - text: Inbox
+#        url: /
+#      - text: Compose
+#        url: /
+#    - title: Images
+#      icon: image
+#      links:
+#      - text: Library
+#        url: /
+#      - text: Upload
+#        url: /
+#    - title: Settings
+#      icon: cog
+#      links:
+#      - text: User settings
+#        url: /
+#      - text: App settings
+#        url: /
 
 
   section1:
@@ -134,19 +140,21 @@ params:
 
 
   section2:
-    title: You're here because you want the best
-    subtitle: And we know it
+    title: Vous êtes ici pour ...
+    subtitle: 'A chacun ses bonnes raisons:'
     features:
-    - title: Powerful and unified interface
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      # Icon (from /images/illustrations/icons/___.svg)
-      icon: laptop-globe
-    - title: Cross-device synchronisation
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+    - title: Tirer partie de l'écosysteme du Logiciel Libre
+      text: Profitez de millions de logiciels libres qui n'attendent que d'intégrer votre infrastructure. Et nous ne sommes pas que consomateur, nous sommes également acteur de l'écosysteme, avec ds logiciels tel que khéops et paasify!
+      icon: laptop-cloud
+    - title: Tirer partie de l'expérience de nos consultants
+      text: Plus de 10 ans d'expérience dans le secteur des TI.
       icon: doc-sync
-    - title: Nomad system
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: mobile-feed
+    - title: Trouver la solution adapté à vos besoins
+      text: La meilleure solution technique n'est pas forecement la votre. Votre contexte opérationel et les contraintes techniques de chaque client sont différentes. Nous vous accompagnons en vous fournissant des solutions adaptés sur mesure!
+      icon:  mobile-feed
+    - title: Trouver un prestataire local
+      text: Nous opérons principalement dans la région du Grand Montréal, au Québec.
+      icon: plug-cloud
 
 
   section3: False
@@ -176,12 +184,12 @@ params:
       img: 3
 
 
-  section5: true
+  section5: false
 
 
   footer:
     # Logo (from /images/logos/___)
-    logo: fresh-white-alt.svg
+    logo: barbu_it_site.svg
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
@@ -194,29 +202,31 @@ params:
     bulmalogo: true
     quicklinks:
       column1:
-        title: "Products"
+        title: "Services"
+        links:
+        - text: Formation
+          link: /
+        - text: Accompagnement
+          link: /
+        - text: Devops
+          link: /
+        - text: Developpement
+          link: /
+      column2:
+        title: "Produits"
         links:
         - text: Khéops
           link: /foss/kheops
         - text: Paasify
           link: /foss/paasify
-      column2:
-        title: "Docs"
-        links:
-        - text: Get started
-          link: /
-        - text: User guides
-          link: /
-        - text: Admin guide
-          link: /
-        - text: Developers
-          link: /
       column3:
         title: "Informations"
         links:
         - text: Technical Blog
           link: /blog/
         - text: À propos
-          url: page/about
+          link: /page/about
+        - text: Mentions légales
+          link: /page/legal
 
 
