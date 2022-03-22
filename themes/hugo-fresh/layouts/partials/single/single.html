@@ -1,3 +1,29 @@
 {{ partial "navbar.html" . }}
 {{ partial "navbar-clone.html" . }}
+
+{{ if .Params.hero }}
+{{ partial "hero-body.html" . }}
+{{ partial "hero-footer.html" . }}
+{{ end }}
+
+{{ if .Params.section1 }}
+{{ partial "section1.html" . }}
+{{ end }}
+
+{{ if .Params.section2 }}
+{{ partial "section2.html" . }}
+{{ end }}
+
+{{ if .Params.section3 }}
+{{ partial "section3.html" . }}
+{{ end }}
+
+{{ if .Params.section4 }}
+{{ partial "section4.html" . }}
+{{ end }}
+
+{{ if .Params.section5 }}
+{{ partial "section5.html" . }}
+{{ end }}
+
 {{ partial "single/content.html" . }}

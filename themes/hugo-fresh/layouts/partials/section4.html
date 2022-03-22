@@ -1,4 +1,4 @@
-{{- $section4 := .Site.Params.section4 }}
+{{- $section4 := .Params.section4 | default .Site.Params.section4 }}
 {{- $title    := index $section4 "title" }}
 {{- $subtitle := index $section4 "subtitle" }}
 {{- $clients  := index $section4 "clients" }}
