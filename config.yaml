@@ -1,4 +1,5 @@
 baseURL: https://barbu-it.github.io/website-public/
+#baseURL: http://127.0.0.1/
 languageCode: en-us
 title: Barbu IT
 theme: hugo-fresh
@@ -58,21 +59,17 @@ params:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Services
-    url: /
+    url: /services/
+  - title: Solutions
+    url: /solutions/
   - title: Logiciel Libre
-    sublinks:
-    - title: Khéops
-      url: /
-    - title: Paasify
-      url: /
-    - title: Dropdown item
-      url: /
+    url: /foss/
   - title: Blog
-    url: /
+    url: /blog/
   - title: À propos
-    url: /
+    url: /page/about
   - title: Prendre contact
-    url: /
+    url: /page/contact
     button: true
 
 
@@ -223,7 +220,7 @@ params:
         title: "Blog"
         links:
         - text: Latest news
-          link: /blog/first
+          link: /blog/
         - text: Tech articles
           link: /blog/second
 
