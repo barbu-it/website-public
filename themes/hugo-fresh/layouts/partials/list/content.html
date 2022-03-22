@@ -1,3 +1,5 @@
+{{- $list_opts       := .Params.listing | default .Site.Params.listing }}
+{{- $list_mode       := index $list_opts "mode" }}
 <section class="section is-medium">
   <div class="container">
     <div class="columns">
@@ -14,7 +16,11 @@
     <!-- Ranges through content/posts/*.md -->
     {{ range .Pages }}
         <li>
+          {{ if eq $list_mode "blog" }}
             <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+          {{ else }}
+            <a href="{{.Permalink}}">{{.Title}}</a>
+          {{ end }}
         </li>
     {{ end }}
     </ul>
